@@ -4,6 +4,7 @@
   --brand-white-text: #ffffff;
   --brand-black-text: #001125;
   --brand-grey-background: #f8f8f8;
+  --brand-white-background: #ffffff;
 }
 
 /* * {
@@ -239,7 +240,7 @@ ul {
 
 
 .screenshots {
-  background-color: var(--brand-grey-background);
+  background-color: var(--brand-white-background);
   height: 1000px;
   background-position: center;
   background-size: cover;
@@ -259,8 +260,8 @@ ul {
   justify-items: center;
 }
 .swiper {
-  width: 100%;
-  height: 100%;
+  width: 90%;
+  height: auto;
 }
 
 .swiper-slide {
@@ -288,4 +289,9 @@ ul {
   width: 100%;
   height: 100%;
   object-fit:contain;
+  border: red solid 1px;
+}
+
+.swiper-pagination{
+  position: relative;
 }
