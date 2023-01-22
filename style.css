@@ -238,7 +238,6 @@ ul {
   margin: 0;
 }
 
-
 .screenshots {
   background-color: var(--brand-white-background);
   height: 1000px;
@@ -288,10 +287,65 @@ ul {
   display: block;
   width: 100%;
   height: 100%;
-  object-fit:contain;
+  object-fit: contain;
   border: red solid 1px;
 }
 
-.swiper-pagination{
-  position: relative;
+.swiper-pagination {
+  position: absolute;
+  bottom: -105px;
+}
+
+.swiper .swiper-button-next,
+.swiper .swiper-button-prev {
+  color: var(--brand-green-text);
+}
+.swiper .swiper-button-next {
+  right: 0px;
+}
+.swiper .swiper-button-prev {
+  left: 0px;
+}
+
+.slogan {
+  height: 348px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slogan video {
+  height: 600px;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.slogan-content {
+  display: grid;
+  grid-column: 1/9;
+  justify-items: center;
+  z-index: 10;
+}
+.slogan-text {
+  grid-column: 1/9;
+}
+.slogan-text h1 {
+  color: var(--brand-green-text);
+  text-align: left;
+  font: normal normal bold 60px/75px "Open Sans";
+  letter-spacing: 0px;
+}
+
+#exception2{
+  color: var(--brand-white-text);
+  text-align: left;
+  font: normal normal normal 50px/75px "Open Sans";
+  letter-spacing: 0px;
 }
