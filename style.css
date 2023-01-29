@@ -255,12 +255,13 @@ ul {
   margin-bottom: 50px;
   display: grid;
   grid-column: 1/9;
-
+  position: relative;
   justify-items: center;
 }
 .swiper {
   width: 90%;
   height: auto;
+  padding-bottom: 20px !important;
 }
 
 .swiper-slide {
@@ -293,18 +294,12 @@ ul {
 
 .swiper-pagination {
   position: absolute;
-  bottom: -105px;
+  bottom: 0px !important;
 }
 
-.swiper .swiper-button-next,
-.swiper .swiper-button-prev {
+.screenshots-content .swiper-button-next,
+.screenshots-content .swiper-button-prev {
   color: var(--brand-green-text);
-}
-.swiper .swiper-button-next {
-  right: 0px;
-}
-.swiper .swiper-button-prev {
-  left: 0px;
 }
 
 .slogan {
