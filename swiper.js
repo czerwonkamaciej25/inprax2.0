@@ -1,8 +1,6 @@
 // import Swiper from "https://unpkg.com/swiper/swiper-bundle.esm.browser.min.js";
 
 var swiper = new Swiper(".mySwiper", {
-  
-  
   loop: true,
   loopFillGroupWithBlank: true,
   pagination: {
@@ -17,7 +15,7 @@ var swiper = new Swiper(".mySwiper", {
   keyboard: true,
 
   effect: "coverflow",
-  spaceBetween: 100,
+  spaceBetween: 110,
       grabCursor: true,
       centeredSlides: true,
       slidesPerView: 3,
