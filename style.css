@@ -112,22 +112,10 @@ ul {
 }
 .iosbadge {
   grid-column: 1/2;
-  display: inline-block;
-  margin: 0 0.5rem;
-
-  animation: bounce; 
-  animation-duration: 2s;
-  animation-delay: 2s;
 }
 
 .androidbadge {
   grid-column: 2/6;
-  display: inline-block;
-  margin: 0 0.5rem;
-
-  animation: bounce; 
-  animation-duration: 2s; 
-  animation-delay: 2s;
 }
 
 .smartphoneimg {
@@ -137,9 +125,8 @@ ul {
   z-index: 2;
   margin: 0 0.5rem;
 
-  animation: slideInRight; 
+  animation: slideInRight;
   animation-duration: 2s;
-
 }
 
 /* section2-specialties */
@@ -257,7 +244,7 @@ ul {
 
 .screenshots {
   background-color: var(--brand-white-background);
-  height: 1300px;
+  height: auto;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -265,6 +252,8 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .screenshots-content {
@@ -377,7 +366,7 @@ ul {
 }
 
 .producers {
-  height: 300px;
+  height: 400px;
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -392,17 +381,77 @@ ul {
   display: grid;
   grid-column: 1/9;
   justify-items: center;
-  z-index: 10;
+
+}
+.producers-content .line {
+  grid-row: 2;
+}
+.producers-content-header h4 {
+  color: var(--brand-black-text);
+  text-align: center;
+  font: normal normal 600 30px/60px "Open Sans";
+  letter-spacing: 0px;
+  color: #001125;
+  text-transform: uppercase;
+  opacity: 1;
+}
+
+.producers-content-header .line {
+  display: flex;
 }
 
 .producers-content-company {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  width: 70%;
-  padding: 40px;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  padding: 20px;
 
-  margin: 0 0.5rem;
-  animation: slideInUp; 
+  animation: slideInUp;
   animation-duration: 2s;
+}
+.producers-content-company img {
+  mix-blend-mode: luminosity;
+  opacity: 1;
+  padding: 30px;
+}
+
+.service {
+  height: auto;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.service-content {
+  display: grid;
+  grid-column: 1/9;
+  justify-items: center;
+}
+
+.service-content-header {
+  padding: 20px;
+  margin-top: 30px;
+}
+.service-content-header h4  {
+  color: var(--brand-black-text);
+  text-align: center;
+  font: normal normal normal 50px/70px "Open Sans";
+  letter-spacing: 0px;
+  color: #001125;
+}
+.service-content-images {
+  display: flex;
+  flex-direction: row;
+}
+.service-content-images  {
+animation: slideInUp;
+animation-duration: 2s;
 }
