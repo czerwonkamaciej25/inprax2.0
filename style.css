@@ -16,6 +16,7 @@ body {
   display: flex;
   flex-direction: column;
   color: #707070;
+  overflow-x: hidden; /* Hide horizontal scrollbar */
 }
 body {
   display: flex;
@@ -459,18 +460,19 @@ ul {
 .service-content-animation {
   margin-top: 20px;
   margin-bottom: 160px;
+  display: flex;
+  flex-direction: column;
 }
 .service-images {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  animation: zoomIn;
+  animation-duration: 2s;
 }
-.service-images {
-  animation: slideInUp;
-  animation-duration: 30ms;
-  animation-fill-mode: backwards;
-}
+
+
 .bands-content {
   display: flex;
   flex-direction: column;
@@ -505,4 +507,43 @@ ul {
 }
 .band3 {
   margin-bottom: 20px;
+}
+
+
+
+
+.counter {
+  height: auto;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #092443;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.counter-content {
+  display: grid;
+  grid-column: 1/9;
+  justify-items: center;
+}
+
+
+.counter-position {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #092443;
+  height: auto;
+  width: 100%;
+  margin: 100px;
+}
+.value {
+  font: normal normal normal 50px/20px "Open Sans";
+  display: block;
+  font-weight: bold;
+  color: #fff;
+  padding: 20px;
 }
