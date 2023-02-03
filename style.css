@@ -381,7 +381,6 @@ ul {
   display: grid;
   grid-column: 1/9;
   justify-items: center;
-
 }
 .producers-content .line {
   grid-row: 2;
@@ -440,7 +439,7 @@ ul {
   padding: 20px;
   margin-top: 100px;
 }
-.service-content-header h4  {
+.service-content-header h4 {
   color: var(--brand-black-text);
   text-align: center;
   font: normal normal normal 50px/70px "Open Sans";
@@ -449,42 +448,50 @@ ul {
   margin-bottom: 50px;
 }
 .service-content-header p {
-color: var(--brand-black-text);
-text-align: left;
-font: normal normal normal 20px/27px "Open Sans";
-letter-spacing: 0px;
-padding-top: 40px;
-padding-bottom: 100px;
+  color: var(--brand-black-text);
+  text-align: left;
+  font: normal normal normal 20px/27px "Open Sans";
+  letter-spacing: 0px;
+  padding-top: 40px;
+  padding-bottom: 100px;
 }
 
-
+.service-content-animation {
+  margin-top: 20px;
+  margin-bottom: 160px;
+}
 .service-images {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
 }
-.service-images  {
-animation: slideInUp;
-animation-duration: 2s;
+.service-images {
+  animation: slideInUp;
+  animation-duration: 30ms;
+  animation-fill-mode: backwards;
 }
-.bands-content{
+.bands-content {
   display: flex;
   flex-direction: column;
 }
 .bands1 {
-  animation: slideInRight;
-animation-duration: 2s;
+  animation: backInRight;
+  animation-duration: 2s;
+  animation-delay: 100ms;
+  animation-fill-mode: backwards;
 }
 .bands2 {
-  animation: slideInRight;
-animation-duration: 2s;
-animation-delay: 60ms;
+  animation: backInRight;
+  animation-duration: 2s;
+  animation-delay: 150ms;
+  animation-fill-mode: backwards;
 }
 .bands3 {
-  animation: slideInRight;
-animation-duration: 2s;
-animation-delay: 90ms;
+  animation: backInRight;
+  animation-duration: 2s;
+  animation-delay: 230ms;
+  animation-fill-mode: backwards;
 }
 .service-content-animation {
   display: flex;
