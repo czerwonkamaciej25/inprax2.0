@@ -362,6 +362,54 @@
       </div>
     </div>
 
+    <div class="footer">
+      <div class="content">
+        <div class="wrapper">
+          <div class="inner-wrapper">
+            <div class="footer-content">
+              <div class="contact-me">
+                <h4>Zostańmy w kontakcie</h4>
+                <form
+                  id="contactform"
+                  method="post"
+                  action=""
+                  enctype="multipart/form-data"
+                >
+                  <div class="input-row">
+                    <div class="text-input">
+                      <label for="name">Imię</label>
+                      <input type="text" id="name" name="name" />
+                    </div>
+                    <div class="text-input">
+                      <label for="email">E-mail</label>
+                      <input type="email" id="email" name="email" />
+                    </div>
+                  </div>
+                  <div class="input-row">
+                    <div class="text-area-input">
+                      <label for="message">Wiadomość</label>
+                      <textarea id="message" name="message"></textarea>
+                    </div>
+                  </div>
+                  <input type="hidden" name="action" value="sendEmail" />
+                  <button
+                    id="submit"
+                    name="submit"
+                    type="submit"
+                    value="Send"
+                    class="button send-button"
+                    onclick="submitForm()"
+                  >
+                    Wyślij
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script

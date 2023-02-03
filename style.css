@@ -568,7 +568,126 @@ h5 {
   width: 180px;
   color: var(--brand-white-text);
   text-align: center;
-  font: normal normal 600 19px/30px  "Open Sans";
+  font: normal normal 600 19px/30px "Open Sans";
   letter-spacing: 0px;
   opacity: 1;
+}
+
+.footer {
+  height: auto;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    227deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(18, 119, 170, 1) 53%,
+    rgba(9, 67, 102, 1) 100%
+  );
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-content {
+  display: grid;
+  grid-column: 1/9;
+  justify-items: center;
+}
+
+.footer .contact-me {
+  display: grid;
+  grid-template-columns: repeat(8, 122px);
+  grid-template-rows: auto;
+  column-gap: 16px;
+}
+.footer .contact-me .input-row {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  grid-column: 1/4;
+}
+.footer .contact-me .input-row .text-input:nth-child(2) {
+  margin-left: 0px;
+}
+
+.footer .contact-me .text-input,
+.text-area-input {
+  display: flex;
+  flex-direction: column;
+  
+}
+.footer .contact-me .text-input input {
+  border: none;
+  width: 250px;
+  font: normal normal normal 15px/33px "Open Sans";
+  padding: 5px;
+}
+.footer .contact-me .text-area-input {
+  width: 100%;
+  min-height: 143px;
+}
+.footer .contact-me .text-area-input textarea {
+  resize: vertical;
+  width: 100%;
+  min-height: 143px;
+  border: none;
+  font: normal normal normal 15px/33px "Open Sans";
+  padding: 5px;
+}
+.footer .contact-me h4 {
+  color: var(--brand-white-text);
+  text-align: left;
+  font: normal normal 600 25px/60px "Open Sans";
+  letter-spacing: 0px;
+  opacity: 1;
+}
+.footer .contact-me .text-input {
+  text-align: left;
+  font: normal normal normal 18px/35px "Open Sans";
+  letter-spacing: 0px;
+  color: #965506;
+  opacity: 1;
+}
+.footer .contact-me .input-row {
+  text-align: left;
+  font: normal normal normal 18px/35px "Open Sans";
+  letter-spacing: 0px;
+  color: #965506;
+  opacity: 1;
+}
+
+.send-button {
+  border-radius: 50px;
+  background: #ffffff 0% 0% no-repeat padding-box;
+  border: 2px solid #ffffff;
+  opacity: 1;
+  width: 171px;
+  height: 54px;
+  align-self: flex-end;
+  text-align: center;
+  font: normal normal 600 20px/27px Open Sans;
+  letter-spacing: 0px;
+  color: #965506;
+  text-transform: uppercase;
+  opacity: 1;
+}
+.send-button:hover {
+  background: rgb(208, 179, 144);
+  border: rgb(208, 179, 144);
+  color: #ffffff;
+}
+input:focus {
+  outline: none !important;
+  border-color: #965506;
+  box-shadow: 0 0 10px #e5b171;
+}
+textarea:focus {
+  outline: none !important;
+  border-color: #965506;
+  box-shadow: 0 0 10px #e5b171;
 }
