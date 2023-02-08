@@ -1,0 +1,298 @@
+@media screen and (max-width: 1550px) {
+  .smartphoneimg {
+    grid-column: 6/9;
+    grid-row: 2/8;
+  }
+}
+
+@media screen and (max-width: 1365px) {
+  .content {
+    display: grid;
+    grid-template-columns: repeat(8, 85px);
+    column-gap: 16px;
+  }
+
+  .wrapper {
+    display: grid;
+    grid-column: 1 / 9;
+  }
+
+  .inner-wrapper {
+    display: grid;
+    grid-template-columns: repeat(8, 85px);
+    column-gap: 16px;
+  }
+  .smartphoneimg {
+    display: none;
+  }
+  .smartphoneimg_tablet {
+    display: grid;
+    grid-column: 6/9;
+    grid-row: 3/8;
+    z-index: 2;
+    margin: 0 0.5rem;
+
+    animation: slideInRight;
+    animation-duration: 2s;
+  }
+  .smartphoneimg_tablet img {
+    width: 100%;
+  }
+  .heading-title {
+    grid-column: 1/7;
+  }
+  .heading-title h1,
+  #exception1 {
+    font: normal normal bold 30px/60px "Open Sans";
+  }
+  .heading-subtitle h2,
+  #exception2 {
+    font: normal normal normal 23px/54px "Open Sans";
+  }
+  .heading-subtitle #exception2 {
+    font: normal normal normal 23px/54px "Open Sans";
+  }
+  .specialties-text p {
+    font: normal normal 300 15px/30px "Open Sans";
+  }
+
+  .function-list-header h1 {
+    font: normal normal bold 25px/60px "Open Sans";
+  }
+  .function-list-item h3 {
+    font: normal normal 600 15px/30px "Open Sans";
+  }
+  .function-list-item p {
+    font: normal normal 300 15px/27px Open Sans;
+  }
+
+  .slogan video {
+    height: 400px;
+  }
+  .slogan-text h1 {
+    font: normal normal bold 40px/65px "Open Sans";
+  }
+  #exception2 {
+    font: normal normal normal 30px/65px "Open Sans";
+  }
+  .producers-content-header h4 {
+    font: normal normal 600 25px/60px "Open Sans";
+  }
+  .producers-content-company img {
+    width: 30%;
+  }
+
+  .service-content-header h4 {
+    font: normal normal normal 50px/70px "Open Sans";
+  }
+  .service-content-header p {
+    font: normal normal normal 20px/27px "Open Sans";
+  }
+  .chart {
+    margin-bottom: 40px;
+  }
+  .service-content-animation {
+    flex-direction: column;
+    align-items: center;
+  }
+  .counter-position {
+    margin: 50px 0 50px 0;
+  }
+  .counter {
+    font: normal normal normal 40px/20px "Open Sans";
+  }
+  h5 {
+    font: normal normal 600 15px/30px "Open Sans";
+  }
+}
+
+@media screen and (max-width: 1255px) {
+  .smartphoneimg {
+    grid-column: 6/9;
+    grid-row: 2/8;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .content {
+    display: grid;
+    grid-template-columns: repeat(8, 51px);
+    column-gap: 16px;
+  }
+
+  .wrapper {
+    display: grid;
+    grid-column: 1 / 9;
+  }
+
+  .inner-wrapper {
+    display: grid;
+    grid-template-columns: repeat(8, 51px);
+    column-gap: 16px;
+  }
+  .navigation {
+    background: url(/images/Background-image-tablet.png);
+    height: 330px;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .logo {
+    display: none;
+  }
+  .logo-850 { 
+    display: grid;
+    margin-top: 20px;
+    grid-column: 1/6;
+    grid-row: 1;
+  }
+  .smartphoneimg {
+    display: none;
+  }
+  .smartphoneimg_tablet {
+    display: grid;
+    grid-column: 6/9;
+    grid-row: 4/9;
+    z-index: 2;
+    margin: 0 0.5rem;
+
+    animation: slideInRight;
+    animation-duration: 2s;
+  }
+  .smartphoneimg_tablet img {
+    width: 100%;
+  }
+  .heading-title {
+    grid-column: 1/8;
+    margin-top: 20px;
+  }
+  .heading-subtitle {
+    margin-top: 0px;
+    grid-row: 4;
+    grid-column: 1/6;
+  }
+  .badges {
+    display: grid;
+    margin-top: 10px;
+  }
+  .iosbadge-mobile {
+    display: grid;
+    grid-column: 1/2;
+  }
+  
+  .androidbadge-mobile{
+    display: grid;
+    grid-column: 2/6;
+  }
+  .iosbadge{
+    display: none;
+  }
+  .androidbadge{
+    display: none;
+  }
+  .heading-title h1,
+  #exception1 {
+    font: normal normal bold 18px/30px "Open Sans";
+  }
+  .heading-subtitle h2,
+  #exception2 {
+    font: normal normal normal 15px/34px "Open Sans";
+  }
+  .heading-subtitle #exception2 {
+    font: normal normal normal 18px/54px "Open Sans";
+  }
+  .specialties-text p {
+    font: normal normal 300 15px/30px "Open Sans";
+  }
+  .specialties-text h1 {
+    font: normal normal 600 18px/70px "Open Sans";
+  }
+  .line {
+    border: 1px solid var(--brand-green-text);
+    grid-row: 3;
+    width: 200px;
+  }
+  .specialties .line {
+    border: 1px solid var(--brand-green-text);
+    grid-row: 2;
+    width: 200px;
+  }
+  .video-content{
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .function-list-header {
+    margin-top: 50px;
+    margin-bottom: 25px;
+  }
+  .function-list-header h1 {
+    font: normal normal bold 25px/60px "Open Sans";
+  }
+  .function-list-item h3 {
+    font: normal normal 600 15px/30px "Open Sans";
+  }
+  .function-list-item p {
+    font: normal normal 300 15px/27px Open Sans;
+  }
+  .specialties-text {
+    margin-top: 30px;
+  }
+  .slogan video {
+    height: 400px;
+  }
+
+  .slogan-text h1 {
+    font: normal normal bold 40px/65px "Open Sans";
+  }
+  #exception2 {
+    font: normal normal normal 30px/65px "Open Sans";
+  }
+  .producers-content-header h4 {
+    font: normal normal 600 25px/60px "Open Sans";
+  }
+  .producers-content-company img {
+    width: 30%;
+  }
+
+  .service-content-header h4 {
+    font: normal normal normal 50px/70px "Open Sans";
+  }
+  .service-content-header p {
+    font: normal normal normal 20px/27px "Open Sans";
+  }
+  .chart {
+    display: none;
+  }
+  .service-content-animation {
+    flex-direction: column;
+    align-items: center;
+  }
+  .band1, .band2, .band3 {
+    display: none;
+  }
+  .bands1mobile, .band1mobile {
+    display: block;
+  }
+  .bands1mobile {
+    animation: slideInRight;
+    animation-duration: 2s;
+    animation-delay: 100ms;
+    animation-fill-mode: backwards;
+  }
+  .counter-position {
+    margin: 50px 0 50px 0;
+  }
+  .counter {
+    font: normal normal normal 40px/20px "Open Sans";
+  }
+  h5 {
+    font: normal normal 600 15px/30px "Open Sans";
+  }
+
+  .footer .contact-me .input-row {
+    flex-direction: column;
+  }
+  .footer .contact-me .input-row .text-input:nth-child(2) {
+    margin-left: 0px;
+  }
+}
+

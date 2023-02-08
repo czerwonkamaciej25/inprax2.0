@@ -17,11 +17,15 @@
       integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
       crossorigin="anonymous"
     />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js" ></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
     />
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="style.css"/>
+    <link rel="stylesheet" href="media.css">
 
     <link rel="icon" type="image/png" href="images/favicon.ico" />
     <link
@@ -36,6 +40,9 @@
           <div class="inner-wrapper">
             <div class="logo">
               <img src="/images/logo.svg" alt="logo" />
+            </div>
+            <div class="logo-850">
+              <img src="/images/logo850.svg" alt="logo" />
             </div>
             <div class="heading-title">
               <h1>
@@ -53,11 +60,20 @@
               <div class="iosbadge">
                 <img src="/images/iosbadge.svg" alt="iosbadge" />
               </div>
+              <div class="iosbadge-mobile">
+                <img src="/images/iosbadgemobile.svg" alt="iosbadge" />
+              </div>
               <div class="androidbadge">
                 <img src="/images/androidbadge.svg" alt="andbadge" />
               </div>
+              <div class="androidbadge-mobile">
+                <img src="/images/androidbadgemobile.svg" alt="andbadge" />
+              </div>
             </div>
             <div class="smartphoneimg">
+              <img src="/images/mobile_screen.svg" alt="" />
+            </div>
+            <div class="smartphoneimg_tablet">
               <img src="/images/mobile_screen.svg" alt="" />
             </div>
           </div>
@@ -257,7 +273,7 @@
                 <h1>
                   Zdobądź przewagę
                   <span id="exception2">nad konkurencją dzięki </span>
-                  nowoczesnym rozwiązaniom
+                  nowoczesnym rozwiązaniom <br>
                   <span id="exception2"
                     >inpraX - tylko dla profesionalistów
                   </span>
@@ -312,6 +328,9 @@
                   <div class="chart">
                     <img src="images/chart.png" alt="" />
                   </div>
+                  <div class="chartmobile">
+                    <img src="images/mobilechart.png" alt="" />
+                  </div>
                 </div>
                 <div class="bands-content">
                   <div class="bands1">
@@ -319,14 +338,25 @@
                       <img src="images/band1.png" alt="" />
                     </div>
                   </div>
+                  <div class="bands1mobile">
+                    <div class="band1mobile">
+                      <img src="images/mobile-service-1.svg" alt="" />
+                    </div>
+                  </div>
                   <div class="bands2">
                     <div class="band2">
                       <img src="images/band2.png" alt="" />
+                    </div>
+                    <div class="band2mobile">
+                      <img src="images/mobile-service-2.svg" alt="" />
                     </div>
                   </div>
                   <div class="bands3">
                     <div class="band3">
                       <img src="images/band3.png" alt="" />
+                    </div>
+                    <div class="band3mobile">
+                      <img src="images/mobile-service-3.svg" alt="" />
                     </div>
                   </div>
                 </div>
@@ -337,22 +367,22 @@
       </div>
     </div>
 
-    <div class="counter">
+    <div class="counter-animation">
       <div class="content">
         <div class="wrapper">
           <div class="inner-wrapper">
             <div class="counter-content">
               <div class="counter-position">
                 <div class="instalatorzy">
-                  <div class="value" numb="2000"></div>
+                  <div class="counter">6878</div>
                   <h5>Tylu instalatorów korzysta z aplikacji</h5>
                 </div>
                 <div class="uruchomienia">
-                  <div class="value" numb="2000"></div>
+                  <div class="counter" >34234</div>
                   <h5>Tyle uruchomień wykonano</h5>
                 </div>
                 <div class="zdjecia">
-                  <div class="value" numb="1099"></div>
+                  <div class="counter" >3293</div>
                   <h5>Tyle dodano zdjęć z instalacji</h5>
                 </div>
               </div>
@@ -384,6 +414,10 @@
                       <label for="email">E-mail</label>
                       <input type="email" id="email" name="email" />
                     </div>
+                    <div class="text-input">
+                      <label for="email">Telefon</label>
+                      <input type="email" id="email" name="email" />
+                    </div>
                   </div>
                   <div class="input-row">
                     <div class="text-area-input">
@@ -404,12 +438,10 @@
                   </button>
                 </form>
               </div>
-            </div>
           </div>
         </div>
       </div>
     </div>
-
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script
@@ -421,6 +453,6 @@
     <script src="scrollProducers.js"></script>
     <script src="scrollChartsAnimation.js"></script>
     <script src="scrollBandsAnimation.js"></script>
-    <script src="counter.js"></script>
+  <script src="counter.js"></script>
   </body>
 </html>

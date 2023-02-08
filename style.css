@@ -7,9 +7,9 @@
   --brand-white-background: #ffffff;
 }
 
-/* * {
+* {
   border: red solid 1px;
-} */
+}
 body {
   margin: 0;
   font-family: "Open Sans", sans-serif;
@@ -61,7 +61,9 @@ ul {
   grid-column: 1/4;
   grid-row: 1;
 }
-
+.logo-850{
+  display: none;
+}
 .heading-title {
   margin-top: 70px;
   grid-row: 2;
@@ -129,7 +131,9 @@ ul {
   animation: slideInRight;
   animation-duration: 2s;
 }
-
+.smartphoneimg_tablet {
+  display: none;
+}
 /* section2-specialties */
 
 .specialties {
@@ -510,8 +514,10 @@ ul {
 .band3 {
   margin-bottom: 20px;
 }
-
-.counter {
+.band1mobile, .band2mobile, .band3mobile, .chartmobile {
+  display: none;
+}
+.counter-animation {
   height: auto;
   background-position: center;
   background-size: cover;
@@ -538,7 +544,7 @@ ul {
   width: 100%;
   margin: 100px;
 }
-.value {
+.counter {
   font: normal normal normal 50px/20px "Open Sans";
   display: block;
   font-weight: bold;
@@ -581,45 +587,43 @@ h5 {
   background: rgb(255, 255, 255);
   background: linear-gradient(
     227deg,
-    rgba(255, 255, 255, 1) 0%,
+    rgb(143, 211, 245) 0%,
     rgba(18, 119, 170, 1) 53%,
     rgba(9, 67, 102, 1) 100%
   );
   width: 100%;
-  display: flex;
+  display: grid;
   justify-content: center;
   align-items: center;
 }
 
 .footer-content {
   display: grid;
-  grid-column: 1/9;
-  justify-items: center;
+  grid-column: 1 / 9;
+  width: 100%;
 }
 
 .footer .contact-me {
-  display: grid;
-  grid-template-columns: repeat(8, 122px);
-  grid-template-rows: auto;
-  column-gap: 16px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
 }
 .footer .contact-me .input-row {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-between;
   width: 100%;
   margin-top: 20px;
   margin-bottom: 20px;
-  grid-column: 1/4;
 }
 .footer .contact-me .input-row .text-input:nth-child(2) {
-  margin-left: 0px;
+  margin-left: 34px;
 }
 
 .footer .contact-me .text-input,
 .text-area-input {
   display: flex;
   flex-direction: column;
-  
 }
 .footer .contact-me .text-input input {
   border: none;
@@ -640,31 +644,30 @@ h5 {
   padding: 5px;
 }
 .footer .contact-me h4 {
-  color: var(--brand-white-text);
   text-align: left;
-  font: normal normal 600 25px/60px "Open Sans";
+  font: normal normal bold 20px/35px "Open Sans";
   letter-spacing: 0px;
+  color: var(--brand-white-text);
   opacity: 1;
 }
 .footer .contact-me .text-input {
   text-align: left;
   font: normal normal normal 18px/35px "Open Sans";
   letter-spacing: 0px;
-  color: #965506;
+  color: var(--brand-white-text);
   opacity: 1;
 }
 .footer .contact-me .input-row {
   text-align: left;
   font: normal normal normal 18px/35px "Open Sans";
   letter-spacing: 0px;
-  color: #965506;
+  color: var(--brand-white-text);
   opacity: 1;
 }
 
 .send-button {
-  border-radius: 50px;
-  background: #ffffff 0% 0% no-repeat padding-box;
-  border: 2px solid #ffffff;
+  background: var(--brand-green-text) 0% 0% no-repeat padding-box;
+  border: none;
   opacity: 1;
   width: 171px;
   height: 54px;
@@ -672,22 +675,42 @@ h5 {
   text-align: center;
   font: normal normal 600 20px/27px Open Sans;
   letter-spacing: 0px;
-  color: #965506;
+  color: var(--brand-white-text);
   text-transform: uppercase;
   opacity: 1;
 }
 .send-button:hover {
-  background: rgb(208, 179, 144);
-  border: rgb(208, 179, 144);
+  background: #88f3dc;
   color: #ffffff;
 }
 input:focus {
   outline: none !important;
-  border-color: #965506;
-  box-shadow: 0 0 10px #e5b171;
+
+  box-shadow: 0 0 10px #71e5d6;
 }
 textarea:focus {
   outline: none !important;
   border-color: #965506;
-  box-shadow: 0 0 10px #e5b171;
+  box-shadow: 0 0 10px #71e5d6;
+}
+
+.google-maps-web {
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.google-maps-mobile {
+  display: none;
+}
+.text-green,
+.text-politics {
+  color: #965506;
+  text-align: center;
+}
+.text-green:hover,
+.text-politics:hover {
+  color: #e5b171;
+}
+.footer-copyright {
+  margin-bottom: 30px;
 }

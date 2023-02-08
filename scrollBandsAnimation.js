@@ -48,3 +48,22 @@ const observer3 = new IntersectionObserver(entries => {
   });
   
   observer5.observe(document.querySelector('.bands3'));
+
+
+  const observer6 = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      const band1mobile = entry.target.querySelector('.band1mobile');
+  
+
+
+      if (entry.isIntersecting) {
+        band1mobile.classList.add('bands1mobile');
+        return; // if we added the class, exit the function
+      }
+  
+      // We're not intersecting, so remove the class!
+      band1mobile.classList.remove('bands1mobile');
+    });
+  });
+  
+  observer6.observe(document.querySelector('.bands1mobile'));
