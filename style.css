@@ -549,15 +549,16 @@ ul {
   width: 100%;
   margin: 100px;
 }
-.counter {
+#counter1, #counter2, #counter3  {
   font: normal normal normal 50px/20px "Open Sans";
   display: block;
   font-weight: bold;
   color: #fff;
   padding: 40px;
-  border-bottom: var(--brand-green-text) solid 5px;
 }
-
+.counter-position .line-border {
+  border-top: var(--brand-green-text) solid 5px;
+}
 .instalatorzy {
   display: flex;
   flex-direction: column;
@@ -577,6 +578,7 @@ ul {
 h5 {
   padding-top: 30px;
   width: 180px;
+  height: 50px;
   color: var(--brand-white-text);
   text-align: center;
   font: normal normal 600 19px/30px "Open Sans";
