@@ -230,6 +230,7 @@ ul {
 }
 .function-list ul {
   padding: 0;
+  margin-bottom: 100px;
 }
 .function-list-item h3 {
   color: var(--brand-black-text);
@@ -260,8 +261,8 @@ ul {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 80px;
+  margin-bottom: 80px;
 }
 
 .screenshots-content {
@@ -578,7 +579,7 @@ ul {
 h5 {
   padding-top: 30px;
   width: 180px;
-  height: 50px;
+  height: auto;
   color: var(--brand-white-text);
   text-align: center;
   font: normal normal 600 19px/30px "Open Sans";

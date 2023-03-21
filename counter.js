@@ -37,7 +37,7 @@
   function startCounter(counter, maxValue) {
     let count = 0;
     const startInterval = 1;
-    const endInterval = 100;
+    const endInterval = 400;
     const increment = maxValue / (endInterval / startInterval);
     
     const intervalId = setInterval(() => {
