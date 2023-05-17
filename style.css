@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
 :root {
   --brand-green-text: #1cc6a0;
   --brand-white-text: #ffffff;
@@ -27,7 +27,7 @@ ul {
   list-style: none;
 }
 .navigation {
-  background: url(/images/backgroundWeb.png);
+  background: url(images/backgroundWeb.png);
   height: 700px;
   width: 100%;
   background-size: cover;
@@ -368,6 +368,13 @@ ul {
 }
 
 #exception2 {
+  color: var(--brand-white-text);
+  text-align: left;
+  font: normal normal normal 50px/75px "Open Sans";
+  letter-spacing: 0px;
+}
+
+#exception3 {
   color: var(--brand-white-text);
   text-align: left;
   font: normal normal normal 50px/75px "Open Sans";

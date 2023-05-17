@@ -139,7 +139,7 @@
   .logo {
     display: none;
   }
-  .logo-850 { 
+  .logo-850 {
     display: grid;
     margin-top: 20px;
     grid-column: 1/6;
@@ -178,15 +178,15 @@
     display: grid;
     grid-column: 1/2;
   }
-  
-  .androidbadge-mobile{
+
+  .androidbadge-mobile {
     display: grid;
     grid-column: 2/6;
   }
-  .iosbadge{
+  .iosbadge {
     display: none;
   }
-  .androidbadge{
+  .androidbadge {
     display: none;
   }
   .heading-title h1,
@@ -216,7 +216,7 @@
     grid-row: 2;
     width: 100px;
   }
-  .video-content{
+  .video-content {
     margin-top: 50px;
     margin-bottom: 50px;
   }
@@ -241,10 +241,13 @@
   }
 
   .slogan-text h1 {
-    font: normal normal bold 30px/65px "Open Sans";
+    font: normal normal bold 50px/65px "Open Sans";
   }
   #exception2 {
-    font: normal normal normal 20px/65px "Open Sans";
+    font: normal normal normal 50px/65px "Open Sans";
+  }
+  #exception3 {
+    font: normal normal normal 30px/65px "Open Sans";
   }
   .producers-content-header h4 {
     font: normal normal 600 25px/60px "Open Sans";
@@ -266,10 +269,18 @@
     flex-direction: column;
     align-items: center;
   }
-  .band1, .band2, .band3 {
+  .band1,
+  .band2,
+  .band3 {
     display: none;
   }
-  .bands1mobile, .band1mobile, .bands2mobile, .band2mobile, .bands3mobile, .band3mobile, .chartmobile {
+  .bands1mobile,
+  .band1mobile,
+  .bands2mobile,
+  .band2mobile,
+  .bands3mobile,
+  .band3mobile,
+  .chartmobile {
     display: block;
     padding-top: 30px;
   }
@@ -335,7 +346,7 @@
     background-size: cover;
     background-repeat: no-repeat;
   }
-  .logo-850 img{
+  .logo-850 img {
     width: 70%;
   }
   .smartphoneimg_tablet {
@@ -365,8 +376,8 @@
     display: grid;
     grid-column: 1/2;
   }
-  
-  .androidbadge-mobile{
+
+  .androidbadge-mobile {
     display: grid;
     grid-column: 1/2;
     padding-top: 20px;
@@ -374,7 +385,6 @@
   .heading-title h1,
   #exception1 {
     font: normal normal bold 15px/30px "Open Sans";
-    
   }
   .heading-subtitle h2,
   #exception2 {
@@ -397,9 +407,10 @@
     width: 100px;
   }
 
-  .video-content{
+  .video-content {
     margin-top: 50px;
     margin-bottom: 50px;
+    grid-column: 1/5;
   }
 
   .function-list {
@@ -411,12 +422,13 @@
   .function-list-header {
     margin-top: 50px;
     margin-bottom: 25px;
+    grid-column: 1/5;
   }
   .function-list li {
     display: flex;
     flex-direction: column;
     justify-items: center;
-    gap: 50px;
+    gap: 25px;
     align-items: center;
     margin-bottom: 40px;
   }
@@ -448,7 +460,6 @@
     grid-column: 1/5;
   }
 
-
   .slogan-content {
     grid-column: 1/5;
   }
@@ -456,12 +467,14 @@
     grid-column: 1/5;
   }
   .slogan-text h1 {
-    font: normal normal bold 17px/50px "Open Sans";
+    font: normal normal bold 40px/50px "Open Sans";
   }
   #exception2 {
-    font: normal normal normal 14px/50px "Open Sans";
+    font: normal normal normal 40px/50px "Open Sans";
   }
-
+  #exception3 {
+    font: normal normal normal 15px/50px "Open Sans";
+  }
 
   .producers-content {
     display: grid;
@@ -474,7 +487,6 @@
   .producers-content-company img {
     width: 80%;
   }
-
 
   .service-content {
     grid-column: 1/5;
@@ -499,8 +511,18 @@
     flex-direction: column;
     align-items: center;
     padding-bottom: 30px;
-    margin-bottom: 20PX;
+    margin-bottom: 20px;
   }
+  .band3mobile img {
+    width: 90%;
+  }
+  .band2mobile img {
+    width: 90%;
+  }
+  .band1mobile img {
+    width: 90%;
+  }
+
   .counter-position {
     display: flex;
     margin: 50px 0 50px 0;
@@ -514,7 +536,23 @@
     grid-column: 1/5;
     justify-items: center;
   }
-  
+  #counter1,
+  #counter2,
+  #counter3 {
+    width: 100%;
+    text-align: center;
+  }
+
+  .instalatorzy {
+    width: 100%;
+  }
+  .uruchomienia {
+    width: 100%;
+  }
+  .zdjecia {
+    width: 100%;
+  }
+
   h5 {
     font: normal normal 600 15px/30px "Open Sans";
     padding: 15px;
@@ -533,6 +571,4 @@
   .footer .contact-me .input-row .text-input:nth-child(2) {
     margin-left: 0px;
   }
-
 }
-

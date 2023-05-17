@@ -27,12 +27,17 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="media.css" />
 
-    <link rel="icon" type="image/png" href="images/favicon.ico" />
+    <link rel="icon" type="image/webp" href="images/favicon.ico" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body class="d-flex flex-column">
     <div class="navigation">
@@ -228,22 +233,22 @@
               <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide">
-                    <img src="images/Oknogłowne.png" alt="Oknogłowne" />
+                    <img src="images/oknoglowne.png" alt="Oknogłowne" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="images/ladowanie.png" alt="Oknogłowne" />
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="images/listazadan.png" alt="Oknogłowne" />
                   </div>
                   <div class="swiper-slide">
                     <img src="images/pomiar.png" alt="Oknogłowne" />
                   </div>
                   <div class="swiper-slide">
-                    <img src="images/zdj.png" alt="Oknogłowne" />
+                    <img src="images/regulacja.png" alt="Oknogłowne" />
                   </div>
                   <div class="swiper-slide">
-                    <img src="images/dokumentacjazdj.png" alt="Oknogłowne" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="images/etapy.png" alt="Oknogłowne" />
-                  </div>
-                  <div class="swiper-slide">
-                    <img src="images/urzadzenia.png" alt="Oknogłowne" />
+                    <img src="images/zdjecia.png" alt="Oknogłowne" />
                   </div>
                 </div>
                 <div class="swiper-pagination"></div>
@@ -274,7 +279,7 @@
                   Zdobądź przewagę
                   <span id="exception2">nad konkurencją dzięki </span>
                   nowoczesnym rozwiązaniom <br />
-                  <span id="exception2"
+                  <span id="exception3"
                     >inpraX - tylko dla profesionalistów
                   </span>
                 </h1>
@@ -326,16 +331,16 @@
               <div class="service-content-animation">
                 <div class="service-images">
                   <div class="chart">
-                    <img src="images/chart.png" alt="" />
+                    <img src="images/chart.webp" alt="" />
                   </div>
                   <div class="chartmobile">
-                    <img src="images/mobilechart.png" alt="" />
+                    <img src="images/mobilechart.webp" alt="" />
                   </div>
                 </div>
                 <div class="bands-content">
                   <div class="bands1">
                     <div class="band1">
-                      <img src="images/band1.png" alt="" />
+                      <img src="images/band1.webp" alt="" />
                     </div>
                   </div>
                   <div class="bands1mobile">
@@ -346,7 +351,7 @@
 
                   <div class="bands2">
                     <div class="band2">
-                      <img src="images/band2.png" alt="" />
+                      <img src="images/band2.webp" alt="" />
                     </div>
                   </div>
                   <div class="bands2mobile">
@@ -357,7 +362,7 @@
 
                   <div class="bands3">
                     <div class="band3">
-                      <img src="images/band3.png" alt="" />
+                      <img src="images/band3.webp" alt="" />
                     </div>
                   </div>
                   <div class="bands3mobile">
@@ -381,16 +386,21 @@
               <div class="counter-position">
                 <div class="instalatorzy">
                   <div id="counter1">6878</div>
-                  <div class="line-border"><h5>Tylu instalatorów korzysta z aplikacji</h5></div>
+                  <div class="line-border">
+                    <h5>Tylu instalatorów korzysta z aplikacji</h5>
+                  </div>
                 </div>
                 <div class="uruchomienia">
                   <div id="counter2">34234</div>
-                  <div class="line-border"><h5>Tyle uruchomień wykonano</h5></div>
+                  <div class="line-border">
+                    <h5>Tyle uruchomień wykonano</h5>
+                  </div>
                 </div>
                 <div class="zdjecia">
                   <div id="counter3">3293</div>
                   <div class="line-border">
-                    <h5>Tyle dodano zdjęć z instalacji</h5></div>
+                    <h5>Tyle dodano zdjęć z instalacji</h5>
+                  </div>
                 </div>
               </div>
             </div>
@@ -422,8 +432,8 @@
                       <input type="email" id="email" name="email" />
                     </div>
                     <div class="text-input">
-                      <label for="email">Telefon</label>
-                      <input type="email" id="email" name="email" />
+                      <label for="phone">Telefon</label>
+                      <input type="phone" id="phone" name="phone" />
                     </div>
                   </div>
                   <div class="input-row">
@@ -463,5 +473,6 @@
     <script src="scrollChartsAnimation.js"></script>
     <script src="scrollBandsAnimation.js"></script>
     <script src="counter.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>
