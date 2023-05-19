@@ -55,7 +55,9 @@
   .specialties-text p {
     font: normal normal 300 15px/30px "Open Sans";
   }
-
+  .hero .company-name h1 {
+    font: normal normal 600 25px/60px "Open Sans";
+  }
   .function-list-header h1 {
     font: normal normal bold 25px/60px "Open Sans";
   }
@@ -189,6 +191,7 @@
   .androidbadge {
     display: none;
   }
+
   .heading-title h1,
   #exception1 {
     font: normal normal bold 18px/30px "Open Sans";
@@ -205,6 +208,9 @@
   }
   .specialties-text h1 {
     font: normal normal 600 18px/70px "Open Sans";
+  }
+  .hero .company-name h1 {
+    font: normal normal 600 20px/40px "Open Sans";
   }
   .line {
     border: 1px solid var(--brand-green-text);
@@ -346,8 +352,12 @@
     background-size: cover;
     background-repeat: no-repeat;
   }
+  .logo-850 {
+    grid-column: 1/5;
+  }
   .logo-850 img {
     width: 70%;
+    grid-column: 1/5;
   }
   .smartphoneimg_tablet {
     display: grid;
@@ -365,22 +375,34 @@
   .heading-title {
     margin-top: 20px;
     grid-row: 2;
-    grid-column: 1/6;
+    grid-column: 1/5;
     width: 100%;
+  }
+  .heading-subtitle {
+    grid-column: 1/5;
   }
   .badges {
     display: grid;
     margin-top: 10px;
+    grid-column: 1/5;
   }
   .iosbadge-mobile {
     display: grid;
     grid-column: 1/2;
+    width: 60%;
   }
-
+  .iosbadge-mobile img,
+  .androidbadge-mobile img {
+    width: 60%;
+  }
   .androidbadge-mobile {
     display: grid;
     grid-column: 1/2;
-    padding-top: 20px;
+    padding-top: 10px;
+    width: 60%;
+  }
+  .specialties-text {
+    grid-column: 1/5;
   }
   .heading-title h1,
   #exception1 {
@@ -400,6 +422,15 @@
   .specialties-text h1 {
     font: normal normal 600 20px/30px "Open Sans";
     width: 45px;
+  }
+  .hero .company-name {
+    display: grid;
+    grid-column: 1 / 5;
+    z-index: 1;
+    width: 100%;
+  }
+  .hero .company-name h1 {
+    font: normal normal 600 15px/30px "Open Sans";
   }
   .line {
     border: 1px solid var(--brand-green-text);
