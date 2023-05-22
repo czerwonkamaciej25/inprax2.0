@@ -6,6 +6,7 @@ function submitForm() {
     var name = document.getElementById("name").value;
     var email = document.getElementById("email").value;
     var message = document.getElementById("message").value;
+    var message = document.getElementById("phone").value;
   
     $.ajax({
       type: "POST",
@@ -14,6 +15,7 @@ function submitForm() {
         name: name,
         email: email,
         message: message,
+        phone: phone,
       },
       success: function (data) {
         const response = JSON.parse(data);
@@ -22,6 +24,7 @@ function submitForm() {
           document.getElementById("name").value = "";
           document.getElementById("email").value = "";
           document.getElementById("message").value = "";
+          document.getElementById("phone").value = "";
         }
       },
       error: function (data) {
