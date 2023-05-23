@@ -40,6 +40,7 @@
   }
   .heading-title {
     grid-column: 1/7;
+    margin-top: 20px;
   }
   .heading-title h1,
   #exception1 {
@@ -166,25 +167,40 @@
   .heading-title {
     grid-column: 1/6;
     margin-top: 20px;
+    grid-row: 3;
   }
   .heading-subtitle {
     margin-top: 0px;
     grid-row: 4;
     grid-column: 1/6;
   }
+  .line {
+    grid-row: 4;
+  }
   .badges {
     display: grid;
     margin-top: 10px;
-  }
-  .iosbadge-mobile {
-    display: grid;
-    grid-column: 1/2;
+    grid-row: 5;
   }
 
+
+
+  .iosbadge-mobile {
+    display: grid;
+    grid-column: 1;
+    width: 80%;
+  }
+  .iosbadge-mobile img,
+  .androidbadge-mobile img {
+    width: 80%;
+  }
   .androidbadge-mobile {
     display: grid;
-    grid-column: 2/6;
+    grid-column: 2;
+    padding-top: 0;
+    width: 80%;
   }
+
   .iosbadge {
     display: none;
   }
@@ -214,7 +230,7 @@
   }
   .line {
     border: 1px solid var(--brand-green-text);
-    grid-row: 3;
+    grid-row: 4;
     width: 100px;
   }
   .specialties .line {
@@ -348,9 +364,10 @@
   }
   .navigation {
     background: url(/images/Background-image-tablet.png);
-    height: 330px;
+    height: auto;
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center;
   }
   .logo-850 {
     grid-column: 1/5;
@@ -373,18 +390,21 @@
     width: 100%;
   }
   .heading-title {
-    margin-top: 20px;
-    grid-row: 2;
+    margin-top: 40px;
+    grid-row: 3;
     grid-column: 1/5;
     width: 100%;
   }
   .heading-subtitle {
     grid-column: 1/5;
+    grid-row: 4;
+    margin-top: 30px;
   }
   .badges {
     display: grid;
-    margin-top: 10px;
+    margin-top: 50px;
     grid-column: 1/5;
+    grid-row: 5;
   }
   .iosbadge-mobile {
     display: grid;
@@ -434,7 +454,7 @@
   }
   .line {
     border: 1px solid var(--brand-green-text);
-    grid-row: 3;
+    grid-row: 4;
     width: 100px;
   }
 
