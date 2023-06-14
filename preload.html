@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Preloader i strona</title>
+<style>
+  /* Dodatkowe style dla kontenera iframe */
+  .iframe-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    border: none;
+  }
+</style>
+</head>
+<body>
+  <!-- Wyświetlanie preloadera -->
+  <iframe src="SVG_all_fast.html" class="iframe-container"></iframe>
+
+  <!-- Ładowanie strony -->
+  <script>
+    window.addEventListener('load', function() {
+      var iframe = document.createElement('iframe');
+      iframe.src = 'index.html';
+      iframe.className = 'iframe-container';
+      document.body.appendChild(iframe);
+    });
+  </script>
+</body>
+</html>

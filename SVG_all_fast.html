@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!--
+	NOTES:
+	1. All tokens are represented by '$' sign in the template.
+	2. You can write your code only wherever mentioned.
+	3. All occurrences of existing tokens will be replaced by their appropriate values.
+	4. Blank lines will be removed automatically.
+	5. Remove unnecessary comments before creating your template.
+-->
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="authoring-tool" content="Adobe_Animate_CC" />
+    <title>SVG_all_fast</title>
+    <!-- write your code here -->
+    <style>
+      body {
+        background-color: #092443;
+      }
+
+      #animation_container {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100% !important;
+        height: 100% !important;
+        background-color: #fff;
+        z-index: 9999;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
+    <script src="https://code.createjs.com/1.0.0/createjs.min.js"></script>
+    <script src="SVG_all_fast.js?1626336948249"></script>
+    <script>
+      var canvas,
+        stage,
+        exportRoot,
+        anim_container,
+        dom_overlay_container,
+        fnStartAnimation;
+      function init() {
+        canvas = document.getElementById("canvas");
+        anim_container = document.getElementById("animation_container");
+        dom_overlay_container = document.getElementById(
+          "dom_overlay_container"
+        );
+        var comp = AdobeAn.getComposition("F4676425DA87F849A30FD33B3ED00CB5");
+        var lib = comp.getLibrary();
+        createjs.MotionGuidePlugin.install();
+        handleComplete({}, comp);
+      }
+      function handleComplete(evt, comp) {
+        //This function is always called, irrespective of the content. You can use the variable "stage" after it is created in token create_stage.
+        var lib = comp.getLibrary();
+        var ss = comp.getSpriteSheet();
+        exportRoot = new lib.SVG_all_fast();
+        stage = new lib.Stage(canvas);
+        //Registers the "tick" event listener.
+        fnStartAnimation = function () {
+          stage.addChild(exportRoot);
+          createjs.Ticker.framerate = lib.properties.fps;
+          createjs.Ticker.addEventListener("tick", stage);
+        };
+        //Code to support hidpi screens and responsive scaling.
+        AdobeAn.makeResponsive(true, "both", false, 1, [
+          canvas,
+          anim_container,
+          dom_overlay_container,
+        ]);
+        AdobeAn.compositionLoaded(lib.properties.id);
+        fnStartAnimation();
+      }
+
+      function hidePreloader() {
+        var preloader = document.getElementById("animation_container");
+        preloader.style.display = "none";
+      }
+    </script>
+    <!-- write your code here -->
+  </head>
+  <body onload="init();" style="margin: 0px">
+    <div
+      id="animation_container"
+      style="background-color: #092443; width: 100%; height: 100%"
+    >
+      <canvas
+        id="canvas"
+        width="253"
+        height="253"
+        style="position: absolute; display: block; background-color: #092443"
+      ></canvas>
+      <div
+        id="dom_overlay_container"
+        style="
+          pointer-events: none;
+          overflow: hidden;
+          width: 253px;
+          height: 253px;
+          position: absolute;
+          left: 0px;
+          top: 0px;
+          display: block;
+        "
+      ></div>
+    </div>
+    <script></script>
+  </body>
+</html>
