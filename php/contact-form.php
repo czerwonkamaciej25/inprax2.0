@@ -7,8 +7,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   $phone  = $_POST['phone'];     // Sender's email address
   $message = $_POST['message'];    // Sender's message
   $from = 'Inprax - formularz kontaktowy ';
-  $to = 'maciej.czerwonka@inprax.pl';     // Recipient's email address
-  $subject = 'PRACOWNIA PRZYMIERZE';
+  $to = 'czerwonkamaciej25@gmail.com';     // Recipient's email address
+  $subject = 'Formularz kontaktowy INPRAX';
 
   $body ="From: $name \n E-Mail: $email \n Phone : $phone \n Message : $message"  ;
 

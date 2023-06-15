@@ -4,6 +4,7 @@ const observer = new IntersectionObserver(entries => {
   
       if (entry.isIntersecting) {
         square.classList.add('producers-content-company');
+        observer.unobserve(entry.target);
         return; // if we added the class, exit the function
       }
   

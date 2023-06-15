@@ -7,6 +7,7 @@
 
       if (entry.isIntersecting) {
         chart.classList.add('service-images');
+        observer2.unobserve(entry.target);
         return; // if we added the class, exit the function
       }
   

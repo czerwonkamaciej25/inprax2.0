@@ -1,13 +1,13 @@
-function submitForm() {
+function submitForm(event) {
     event.preventDefault();
     event.stopPropagation();
     console.log("submit");
-  
+
     var name = document.getElementById("name").value;
     var email = document.getElementById("email").value;
     var message = document.getElementById("message").value;
-    var message = document.getElementById("phone").value;
-  
+    var phone = document.getElementById("phone").value;
+
     $.ajax({
       type: "POST",
       url: "/php/contact-form.php",
@@ -32,4 +32,4 @@ function submitForm() {
       },
     });
   }
-  
+

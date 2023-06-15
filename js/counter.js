@@ -25,6 +25,7 @@ const observer9 = new IntersectionObserver((entries, observer9) => {
           startCounter(entry.target, 2500);
           break;
       }
+      observer9.unobserve(entry.target);
     }
   });
 }, options);
