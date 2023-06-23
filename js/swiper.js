@@ -41,10 +41,10 @@ var swiper = new Swiper(".mySwiper", {
         },
         // when window width is >= 480px
         480: {
-          slidesPerView: 2,
+          slidesPerView: 1,
           spaceBetween: 50,
           coverflowEffect: {
-            rotate: 2,
+            rotate: 0,
             stretch: 0,
             depth: 60,
             modifier: 1,
@@ -54,12 +54,24 @@ var swiper = new Swiper(".mySwiper", {
         },
         // when window width is >= 640px
         850: {
-          slidesPerView: 3,
-          spaceBetween: 110,
+          slidesPerView: 2,
+          spaceBetween: 70,
           coverflowEffect: {
-            rotate: 2,
+            rotate: 0,
             stretch: 0,
-            depth: 70,
+            depth: 20,
+            modifier: 0,
+            slideShadows: false,
+          },
+          
+        },
+        1366: {
+          slidesPerView: 3,
+          spaceBetween: 100,
+          coverflowEffect: {
+            rotate: 0,
+            stretch: 0,
+            depth: 30,
             modifier: 1,
             slideShadows: false,
           },

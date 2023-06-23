@@ -84,6 +84,12 @@
   .producers-content-company img {
     width: 30%;
   }
+  .screenshots-content .swiper-button-next {
+    right: -50px;
+  }
+  .screenshots-content .swiper-button-prev {
+    left: -50px;
+  }
 
   .service-content-header h4 {
     font: normal normal normal 50px/70px "Open Sans";
