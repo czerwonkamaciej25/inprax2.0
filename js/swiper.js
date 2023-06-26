@@ -34,19 +34,32 @@ var swiper = new Swiper(".mySwiper", {
           coverflowEffect: {
             rotate: 2,
             stretch: 0,
-            depth: 70,
+            depth: 0,
             modifier: 1,
             slideShadows: false,
           },
         },
         // when window width is >= 480px
+        
         480: {
           slidesPerView: 1,
           spaceBetween: 50,
           coverflowEffect: {
             rotate: 0,
             stretch: 0,
-            depth: 60,
+            depth: 200,
+            modifier: 1,
+            slideShadows: false,
+          },
+          
+        },
+        575: {
+          slidesPerView: 2,
+          spaceBetween: 50,
+          coverflowEffect: {
+            rotate: 0,
+            stretch: 0,
+            depth: 200,
             modifier: 1,
             slideShadows: false,
           },
@@ -54,13 +67,13 @@ var swiper = new Swiper(".mySwiper", {
         },
         // when window width is >= 640px
         850: {
-          slidesPerView: 2,
-          spaceBetween: 70,
+          slidesPerView: 3,
+          spaceBetween: 60,
           coverflowEffect: {
             rotate: 0,
             stretch: 0,
-            depth: 20,
-            modifier: 0,
+            depth: 10,
+            modifier: 1,
             slideShadows: false,
           },
           
