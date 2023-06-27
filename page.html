@@ -498,14 +498,27 @@
                     type="submit"
                     value="Send"
                     class="button send-button"
-                    onclick="submitForm()"
+                    onclick="submitForm(event)"
                   >
                     Wyślij
                   </button>
                 </form>
+                <div id="form-result"></div>
                 <div class="copyright">
                   <div class="copyright-content">
-                    <div class="footer-copyright iq-ptb-20">Copyright @<span id="copyright"> <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script></span> <a href="#" class="text-green">INPRAX.</a> All Rights Reserved </div>
+                    <div class="footer-copyright iq-ptb-20">
+                      Copyright @<span id="copyright">
+                        <script>
+                          document
+                            .getElementById("copyright")
+                            .appendChild(
+                              document.createTextNode(new Date().getFullYear())
+                            );
+                        </script></span
+                      >
+                      <a href="#" class="text-green">INPRAX.</a> All Rights
+                      Reserved
+                    </div>
                   </div>
                 </div>
               </div>

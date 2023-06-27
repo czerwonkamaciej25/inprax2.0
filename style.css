@@ -31,7 +31,7 @@ body {
   left: 0;
   right: 0;
   z-index: 1000;
-  background: #ECF0F1;
+  background: #ecf0f1;
   /* display: none; */
 }
 .load {
@@ -88,7 +88,6 @@ ul {
 }
 
 .logo {
-  
   grid-column: 1/4;
   grid-row: 3;
 }
@@ -735,7 +734,6 @@ h5 {
   margin-bottom: 20px;
 }
 
-
 .footer .contact-me .text-input,
 .text-area-input {
   display: flex;
@@ -832,9 +830,14 @@ textarea:focus {
   margin-top: 30px;
   color: #092443;
 }
+.error-input {
+  border: 2px solid red !important;
+}
+#form-result {
+  color: #1cc6a0;
+}
 .copyright {
   display: flex;
   justify-content: center;
   align-items: center;
-  
 }

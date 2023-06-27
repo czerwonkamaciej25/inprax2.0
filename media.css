@@ -419,12 +419,12 @@
   }
   .iosbadge-mobile img,
   .androidbadge-mobile img {
-    width: 60%;
+    width: 80%;
   }
   .androidbadge-mobile {
     display: grid;
     grid-column: 1/2;
-    padding-top: 10px;
+    padding-top: 30px;
     width: 60%;
   }
   .specialties-text {
